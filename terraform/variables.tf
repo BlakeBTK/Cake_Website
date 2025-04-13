@@ -21,3 +21,5 @@ variable "github_token" {
   type        = string
   sensitive   = true
 }
+
+variable "codepipeline_role_arn" {}

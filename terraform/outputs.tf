@@ -1,5 +1,5 @@
 output "bucket_url" {
-  value = aws_s3_bucket.react_site.website_endpoint
+  value = aws_s3_bucket_website_configuration.react_site.website_endpoint
 }
 
 output "codepipeline_url" {
