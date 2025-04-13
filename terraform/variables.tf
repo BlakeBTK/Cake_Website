@@ -22,4 +22,6 @@ variable "github_token" {
   sensitive   = true
 }
 
+variable codestar_connection_name {}
+
 variable "codepipeline_role_arn" {}
