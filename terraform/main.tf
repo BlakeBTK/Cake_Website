@@ -1,4 +1,3 @@
-
 resource "aws_s3_bucket" "react_site" {
   bucket = var.bucket_name
   force_destroy = true
@@ -109,12 +108,10 @@ resource "aws_iam_policy" "codepipeline_connections" {
   })
 }
 
-
 resource "aws_iam_role_policy_attachment" "codepipeline_connections_attach" {
   role       = aws_iam_role.codepipeline_role.name
   policy_arn = aws_iam_policy.codepipeline_connections.arn
 }
-
 
 resource "aws_iam_role_policy_attachment" "codepipeline_service" {
   role       = aws_iam_role.codepipeline_role.name
